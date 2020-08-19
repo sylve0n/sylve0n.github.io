@@ -1,0 +1,171 @@
+#home {
+  :root {
+    --animation-time: 1s;
+  }
+  
+  body{
+    background-color: black;
+    background-image: url('../images/background.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+  } 
+  .container{
+    margin: auto;
+  }
+  .header-text{
+    position: relative;
+    left: 100px;
+    top: 200px;
+    width:800px;
+    mix-blend-mode: lighten;
+  }
+  
+  .glitch {
+    position: relative;
+    font-family: 'VT323', monospace;
+    font-size: 10em;
+    /* letter-spacing: -30px;
+    word-spacing: 30px;  */
+    transform:skew(25deg, -20deg) scaleY(.66667);
+    color: white;
+    isolation: isolate;
+  }
+  .glitch::before,
+  .glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 10;
+    left: 0;
+    height: 100%;
+  }
+  .glitch::before {
+    clip: rect(44px, 450px, 56px, 0);
+    /* variation */
+    left: 2px;
+    text-shadow: -1px 0 red;
+    animation: glitch-anim var(--animation-time) infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+    /* important: opaque background masks the original */
+    background: black;
+  }
+  .glitch::after {
+    animation: glitch-anim var(--animation-time) infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+    /* variation */
+    left: -2px;
+    text-shadow: -1px 0 blue;
+  
+    /* important: opaque background masks the original */
+    background: black;
+  }
+  
+  .spin{
+    background-image: url("../images/pattern2.jpg");
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    margin: 0px;
+    position: absolute;
+    top:40px;
+    left: 60px; 
+    z-index: 250;
+    animation: rotate 5.5s infinite;
+    animation-name: rotate;
+    animation-duration: 5.5s;
+    animation-timing-function: linear;
+    animation-delay: initial;
+    animation-iteration-count: infinite;
+    animation-direction: initial;
+    animation-fill-mode: forwards;
+    animation-play-state: initial;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear; 
+  }
+  .triangle{
+    position:absolute;
+    top:10px;
+    left:80px;
+    z-index:200;
+    mix-blend-mode: difference;
+  }
+  .circle{   
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 40px;
+    left: 120px;
+    background: #bd0000;
+    z-index: -100;
+    border-radius: 50%;
+    box-shadow: inset -20px 4px 50px 0px #440606;
+    mix-blend-mode: difference;
+  }
+  .computer{
+    width: 400px;
+    height: 400px;
+    background-image: url("../images/meanwhile.png");
+    background-size: initial;
+    z-index: 300;
+    position: absolute;
+    top: 100px;
+    left: 180px;
+    background-repeat: no-repeat;
+    animation: popin 1s infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+  }
+  @keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes rotate
+  {
+    from{-webkit-transform:rotate(0deg);}
+    to{-webkit-transform:rotate(360deg);}
+  }
+  @-moz-keyframes rotate
+  {
+    from{-moz-transform:rotate(0deg);}
+    to{-moz-transform:rotate(360deg);}
+  }
+  @-ms-keyframes rotate
+  {
+    from{-ms-transform:rotate(0deg);}
+    to{-ms-transform:rotate(360deg);}
+  }
+  
+  @keyframes popin{
+    0%{
+        background-size: 178px;
+    }
+    100%{
+        background-size: 200px;
+    }
+  }
+  @keyframes glitch-anim {
+  0% {
+    clip: rect(100px, 800px, 200px, 0);
+  }
+  20% {
+    clip: rect(29px, 800px, 16px, 0);
+  }
+  40% {
+    clip: rect(200px, 800px, 3px, 0);
+  }
+  60% {
+    clip: rect(42px, 800px, 90px, 0);
+  }
+  80% {
+    clip: rect(15px, 800px, 13px, 0);
+  }
+  100% {
+    clip: rect(53px, 800px, 5px, 0);
+  }
+  }
+}
