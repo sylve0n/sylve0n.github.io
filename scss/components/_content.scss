@@ -7,6 +7,10 @@
   img {
     max-width: 400px;
   }
+
+  @include breakpoint(medium down) {
+    display: block;
+  }
 }
 
 .work { 
@@ -37,6 +41,10 @@
       height: 510px;
     }
   }
+
+  @include breakpoint(medium down) {
+    margin-bottom: 5em;
+  }
 }
 
 .work-img {
@@ -45,6 +53,11 @@
   height: 500px;
   background-size: cover;
   background-position: center;
+
+  @include breakpoint(medium down) {
+    max-width: 300px;
+    height: 350px;
+  }
 }
 
 .work-img--mn-wp {
