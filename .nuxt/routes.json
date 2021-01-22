@@ -1,0 +1,26 @@
+[
+  {
+    "name": "404",
+    "path": "/404",
+    "component": "/home/hannah/Documents/_sites/sylve0n.github.io/pages/404.vue",
+    "chunkName": "pages/404",
+    "url": "/404",
+    "_name": "_e7bacb0e"
+  },
+  {
+    "name": "about",
+    "path": "/about",
+    "component": "/home/hannah/Documents/_sites/sylve0n.github.io/pages/about/index.vue",
+    "chunkName": "pages/about/index",
+    "url": "/about",
+    "_name": "_30eaffde"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/home/hannah/Documents/_sites/sylve0n.github.io/pages/index.vue",
+    "chunkName": "pages/index",
+    "url": "/",
+    "_name": "_319b96d3"
+  }
+]

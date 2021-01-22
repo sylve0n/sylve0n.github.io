@@ -1,0 +1,49 @@
+// Breakpoints
+// These are used in the foundation breakpoint mixin
+// Since I code mobile first, I use breakpoints that are 1 pixel higher than common sizes
+$small:   0;
+$medium:  376px;
+$large:   769px;
+$xlarge:  1201px;
+$xxlarge: 1441px;
+
+// Useful in the default-sizing mixin
+$mobile-margin: 1.5em;
+$desktop-margin: 2em;
+
+// Type
+$browser-context: 16;
+$sans: 'Swiss', 'Helvetica', 'Arial', sans-serif;
+$cond: acumin-pro-extra-condensed, sans-serif;
+
+// Animation
+$default-timing: 200ms;
+
+// Layers, add more in between breakpoints if you need. 
+// use map-get to access. 
+// z-index: map-get($z, 1)
+// https://sass-lang.com/documentation/functions/map#map-get
+$z: (
+  1: 10,
+  2: 20,
+  3: 30,
+  4: 40,
+  5: 50,
+  6: 60,
+  7: 70,
+  8: 80,
+  9: 90,
+  10: 100,
+  top: 1000
+);
+
+$wave: '<svg version="1.1" id="Layer_1_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 19.3 6" style="enable-background:new 0 0 19.3 6;" xml:space="preserve">
+<style type="text/css">
+  .st0{
+    fill:#ff206e;
+    stroke: #0C0F0A;
+    stroke-width: 0.3;
+  }
+</style>
+<path class="st0" d="M-5.5,3.8C-4.2,4.8-2.8,6,0,6s4.2-1.2,5.5-2.2C6.6,2.8,7.6,2,9.7,2s3,0.8,4.2,1.8c1.3,1,2.7,2.2,5.5,2.2  s4.2-1.2,5.5-2.2l-1.4-0.9c-1.1,1-2.1,1.8-4.2,1.8s-3-0.8-4.2-1.8c-1.2-1-2.7-2.2-5.4-2.2c-2.8,0-4.2,1.2-5.5,2.2  C3,3.9,2.1,4.7,0,4.7s-3-0.8-4.2-1.8L-5.5,3.8z"/>
+</svg>';

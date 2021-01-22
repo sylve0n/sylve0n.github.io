@@ -1,0 +1,5 @@
+/*
+  Content-Security-Policy: default-src 'self' *.google.com *.google-analytics.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' *.google.com *.gstatic.com *.googletagmanager.com *.google-analytics.com; font-src 'self' data: *.typekit.net *.google.com; style-src 'self' 'unsafe-inline' data: *.typekit.net; report-uri https://2562ba4556c5dc55fac7709ffd7b97b7.report-uri.com/r/d/csp/enforce
+  X-XSS-Protection: 1
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
