@@ -1,5 +1,5 @@
 <template>
-  <section class="container">
+  <section class="home">
     <client-only>
       <Particles
         color="#DCBA8F"
@@ -12,14 +12,13 @@
         :move-speed="0.75"
       />
     </client-only>
-    <div>
+    <div class="container">
       <h1 class="title">
-        Hannah Sartin
+        I'm Hannah Sartin
       </h1>
       <h2 class="subtitle">
-        A site template using nuxt.js
+        I do web stuff.
       </h2>
-      <h2>testing</h2>
     </div>
   </section>
 </template>
@@ -59,16 +58,8 @@ export default {
 @import '~assets/scss/colors';
 @import '~assets/scss/vendor/index';
 
-h2 {
-  color: tomato;
-  @include breakpoint(medium up) {
-    color: $text;
-  }
+.title {
+  margin-bottom: em(10);
 }
-
-.container {
-  background-color: #fff;
-}
-
 
 </style>

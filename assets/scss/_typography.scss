@@ -65,7 +65,6 @@ h4, .h4 {
 }
 
 a {
-  color: $clickable;
   text-decoration: none;
 }
 
@@ -87,8 +86,8 @@ sup {
 
 .title {
   height: 100%;
-  padding: 0.1em;
-  font-size: em(70);
+  width: 100%;
+  font-size: em(60);
   color: $text;
   text-align: center;
   background-image: svg-uri($wave);
@@ -108,4 +107,12 @@ sup {
   &:hover {
     animation-play-state: running;
   }
+
+  @include breakpoint($large) {
+    font-size: em(70);
+  }
+}
+
+.subtitle {
+  margin-top: -40px;
 }

@@ -1,1 +1,49 @@
 // * General Header or Site Header
+
+header {
+    display: flex;
+    justify-content: center;
+    margin-top: em(30);
+
+    ul {
+        padding-left: 0;
+    }
+
+    li {
+        font-size: em(20);
+        font-weight: 600;
+        background-color: #fff;
+        border: 3px solid $black;
+        border-radius: 5px;
+        padding: em(10);
+        width: em(100);
+        text-align: center;
+        
+
+        a {
+            color: $black;
+        }
+
+        &:nth-child(1n) {
+            &:hover {
+                background-color: $pink;
+            }  
+        }
+
+        &:nth-child(2n) {
+            &:hover {
+                background-color: $yellow;
+            }
+        }
+
+        &:nth-child(3n) {
+            &:hover {
+                background-color: $turquoise;
+            } 
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

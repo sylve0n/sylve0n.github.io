@@ -1,8 +1,7 @@
 <template>
-  <div>
-    <h1>
-      <strong>404</strong>
-      Not Found
+  <div class="container">
+    <h1 class="title">
+      Ooooops
     </h1>
   </div>
 </template>
