@@ -3,18 +3,18 @@
     <nav>
       <ul>
         <li>
-          <nuxt-link to="/">
+          <nuxt-link class="btn" to="/">
             home
           </nuxt-link>
         </li>
         <li>
-          <nuxt-link to="/contact">
+          <nuxt-link class="btn" to="/contact">
             contact
           </nuxt-link>
         </li>
         <li>
-          <nuxt-link to="/projects">
-            projects
+          <nuxt-link class="btn" to="/about">
+            about
           </nuxt-link>
         </li>
       </ul>

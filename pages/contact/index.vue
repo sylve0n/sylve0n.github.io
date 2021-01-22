@@ -1,32 +1,27 @@
 <template>
-  <div>
-    <h1>Posts</h1>
-    <button @click="testGTM">
-      Trigger GTM Event
-    </button>
-  </div>
+  <section>
+    <div class="container">
+      <h1 class="title">
+        Contact
+      </h1>
+      <h2 class="subtitle">
+        Coming Soon
+      </h2>
+      <ul class="">
+
+      </ul>
+    </div>
+  </section>
 </template>
 
 <script>
-import { pageview } from '~/mixins/gtm.js'
 
 export default {
   components: {
   },
-  mixins: [pageview],
   data () {
     return {
-      title: 'Nuxt Test: About'
-    }
-  },
-  methods: {
-    testGTM () {
-      window.dataLayer.push({
-        event: 'genericEvent',
-        eventCat: 'Test Cat',
-        eventAction: 'Test Action',
-        eventLabel: 'Test Label'
-      })
+      title: 'Contact'
     }
   },
   head () {

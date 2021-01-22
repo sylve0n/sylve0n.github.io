@@ -16,7 +16,7 @@ export default {
    ** Headers of the page
    */
   head: {
-    titleTemplate: '%s - Nuxt.js',
+    titleTemplate: '%s',
     htmlAttrs: {
       lang: 'en'
     },

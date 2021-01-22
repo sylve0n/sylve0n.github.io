@@ -10,6 +10,31 @@ header {
     }
 
     li {
+        &:nth-child(1n) {
+            .btn:hover {
+                background-color: $pink;
+            }  
+        }
+
+        &:nth-child(2n) {
+            .btn:hover {
+                background-color: $yellow;
+            }
+        }
+
+        &:nth-child(3n) {
+            .btn:hover {
+                background-color: $turquoise;
+            } 
+        }
+
+        .btn:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .btn {
+        display: inline-block;
         font-size: em(20);
         font-weight: 600;
         background-color: #fff;
@@ -18,32 +43,11 @@ header {
         padding: em(10);
         width: em(100);
         text-align: center;
+        color: $black;
         
 
         a {
             color: $black;
-        }
-
-        &:nth-child(1n) {
-            &:hover {
-                background-color: $pink;
-            }  
-        }
-
-        &:nth-child(2n) {
-            &:hover {
-                background-color: $yellow;
-            }
-        }
-
-        &:nth-child(3n) {
-            &:hover {
-                background-color: $turquoise;
-            } 
-        }
-
-        &:last-child {
-            margin-right: 0;
         }
     }
 }

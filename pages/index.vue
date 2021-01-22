@@ -1,17 +1,5 @@
 <template>
   <section class="home">
-    <client-only>
-      <Particles
-        color="#DCBA8F"
-        :particles-number="100"
-        shape-type="star"
-        :particle-size="3"
-        movement-direction="top"
-        lines-color="#dedede"
-        :line-linked="false"
-        :move-speed="0.75"
-      />
-    </client-only>
     <div class="container">
       <h1 class="title">
         I'm Hannah Sartin
@@ -25,16 +13,14 @@
 
 <script>
 import { pageview } from '~/mixins/gtm.js'
-import Particles from '~/components/UI/Particles.vue'
 
 export default {
   components: {
-    Particles
   },
   mixins: [pageview],
   data () {
     return {
-      title: 'Nuxt Js Base'
+      title: 'Home'
     }
   },
   head () {

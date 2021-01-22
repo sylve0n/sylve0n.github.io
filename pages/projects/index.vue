@@ -1,10 +1,17 @@
 <template>
-  <div>
-    <h1>Posts</h1>
-    <button @click="testGTM">
-      Trigger GTM Event
-    </button>
-  </div>
+  <section>
+    <div class="container">
+      <h1 class="title">
+        Projects
+      </h1>
+      <h2 class="subtitle">
+        Coming Soon
+      </h2>
+      <ul class="">
+
+      </ul>
+    </div>
+  </section>
 </template>
 
 <script>
@@ -16,7 +23,7 @@ export default {
   mixins: [pageview],
   data () {
     return {
-      title: 'Nuxt Test: About'
+      title: 'Projects'
     }
   },
   methods: {

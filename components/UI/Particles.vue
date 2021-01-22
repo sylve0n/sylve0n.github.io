@@ -200,6 +200,26 @@ export default {
       "straight": true,
       "out_mode": "bounce",
       "bounce": false,
+      "attract": {        "speed": 12.46023109575272,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": false,
+      "distance": 500,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 2
+    },
+    "move": {
+      "enable": true,
+      "speed": 9.838726868743187,
+      "direction": "none",
+      "random": true,
+      "straight": true,
+      "out_mode": "bounce",
+      "bounce": false,
       "attract": {
         "enable": false,
         "rotateX": 163.97878114571978,
@@ -223,12 +243,34 @@ export default {
     "modes": {
       "grab": {
         "distance": 400,
+        "enable": false,
+        "rotateX": 163.97878114571978,
+        "rotateY": 81.98939057285989
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "repulse"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "bubble"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 400,
         "line_linked": {
           "opacity": 0.5
         }
       },
       "bubble": {
-        "distance": 400,
+        "distance": 100,
         "size": 4,
         "duration": 0.3,
         "opacity": 1,
