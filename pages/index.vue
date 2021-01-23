@@ -28,7 +28,7 @@ export default {
       title: this.title, // this title is placed at the start, according to the title template in nuxt.config.js
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
-        { hid: 'description', name: 'description', content: 'My custom description' }, // If you remove this description, or comment it out, the page will use the description in nuxt.config.js
+        { hid: 'description', name: 'description', content: '' }, // If you remove this description, or comment it out, the page will use the description in nuxt.config.js
         { property: 'og:site_name', content: '' },
         { property: 'og:title', content: '' },
         { property: 'og:description', content: '' },
