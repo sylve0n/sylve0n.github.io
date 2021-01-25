@@ -5,10 +5,24 @@
         Contact
       </h1>
       <h2 class="subtitle">
-        Coming Soon
+        Find me on the World Wide Web!
       </h2>
-      <ul class="">
-
+      <ul class="contact-logos">
+        <li>
+          <a href="mailto:hnsartin@gmail.com" target="_blank">
+            <img src="img/email.png"/>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/sylve0n">
+            <img src="img/github.png"/>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/hannah-sartin/" target="_blank">
+            <img src="img/LI-In-Bug.png"/>
+          </a>
+        </li>
       </ul>
     </div>
   </section>
@@ -35,3 +49,18 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+  .contact-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+
+    li {
+      max-width: 40px;
+      list-style: none;
+      margin: 20px;
+    }
+  }
+</style>

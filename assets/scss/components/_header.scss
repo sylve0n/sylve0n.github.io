@@ -34,20 +34,6 @@ header {
     }
 
     .btn {
-        display: inline-block;
-        font-size: em(20);
-        font-weight: 600;
-        background-color: #fff;
-        border: 3px solid $black;
-        border-radius: 5px;
-        padding: em(10);
-        width: em(100);
-        text-align: center;
-        color: $black;
-        
-
-        a {
-            color: $black;
-        }
+        width: em(100)
     }
 }

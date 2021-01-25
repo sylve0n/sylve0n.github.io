@@ -7,6 +7,11 @@
       <h2 class="subtitle">
         I do web stuff.
       </h2>
+      <div class="resume">
+        <nuxt-link class="btn" to="documents/hannah-sartin_resume.pdf" target="_blank">
+          view my resume
+        </nuxt-link>
+      </div>
     </div>
   </section>
 </template>

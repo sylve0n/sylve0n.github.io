@@ -1,14 +1,20 @@
-button {
-  @include button-reset;
-}
+.btn {
+  display: inline-block;
+  font-size: em(20);
+  font-weight: 600;
+  background-color: #fff;
+  border: 3px solid $black;
+  border-radius: 5px;
+  padding: em(10);
+  text-align: center;
+  color: $black;
+  
+  &:hover {
+    background-color: $turquoise;
+  }
+  
 
-.button {
-  line-height: 1;
-}
-
-button.button {
-
-}
-a.button {
-  text-decoration: none;
+  a {
+      color: $black;
+  }
 }

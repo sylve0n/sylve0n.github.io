@@ -257,8 +257,8 @@ export default {
         "mode": "repulse"
       },
       "onclick": {
-        "enable": true,
-        "mode": "bubble"
+        "enable": false,
+        "mode": "repulse"
       },
       "resize": true
     },
