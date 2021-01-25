@@ -11,20 +11,29 @@ header {
 
     li {
         &:nth-child(1n) {
+            .btn {
+                box-shadow: 0.3em 0.2em 0 0 $pink, 0.3em 0.2em 0 0.1em $black;
+            }
             .btn:hover {
-                background-color: $pink;
+                box-shadow: 0 4em 0 0 $pink inset, 0em 0em 0 0 #bbb;
             }  
         }
 
         &:nth-child(2n) {
+            .btn {
+                box-shadow: 0.3em 0.2em 0 0 $yellow, 0.3em 0.2em 0 0.1em $black;
+            }
             .btn:hover {
-                background-color: $yellow;
+                box-shadow: 0 4em 0 0 $yellow inset, 0em 0em 0 0 #bbb;
             }
         }
 
         &:nth-child(3n) {
+            .btn {
+                box-shadow: 0.3em 0.2em 0 0 $turquoise, 0.3em 0.2em 0 0.1em $black;
+            }
             .btn:hover {
-                background-color: $turquoise;
+                box-shadow: 0 4em 0 0 $turquoise inset, 0em 0em 0 0 #bbb;
             } 
         }
 
