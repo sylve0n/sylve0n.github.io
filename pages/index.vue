@@ -2,7 +2,7 @@
   <section class="home">
     <div class="container">
       <h1 class="title">
-        I'm Hannah Sartin
+        I'm Hannah
       </h1>
       <h2 class="subtitle">
         I do web stuff.

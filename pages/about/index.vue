@@ -5,13 +5,13 @@
         About Me
       </h1>
       <h2 class="subtitle">
-        I do web stuff.
+        I enjoy the web thanks for reading
       </h2>
-      <div class="resume">
+      <!-- <div class="resume">
         <nuxt-link class="btn" to="documents/hannah-sartin_resume.pdf" target="_blank">
           view my resume
         </nuxt-link>
-      </div>
+      </div> -->
     </div>
   </section>
 </template>
