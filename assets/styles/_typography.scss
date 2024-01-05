@@ -1,0 +1,126 @@
+h1, h2, h3, h4, h5, h6 {
+  color: $text;
+}
+
+// Scale based on Jason Pamental's
+// http://typecast.com/blog/a-more-modern-scale-for-web-typography
+
+h1, .h1 {
+  font-family: $sans;
+  font-weight: 800;
+  line-height: 1.25;
+  letter-spacing: -1.5px;
+  font-size: 2rem;
+  @include breakpoint(large) {
+    font-size: 2.5rem;
+    line-height: 1.125;
+  }
+  @include breakpoint(xlarge) {
+    font-size: 3rem;
+    line-height: 1.05;
+  }
+}
+
+h2, .h2 {
+  font-family: $sans;
+  font-weight: 800;
+  line-height: 1.153;
+  letter-spacing: -0.5px;
+  font-size: 1.75rem;
+  @include breakpoint(large) {
+    font-size: 2rem;
+    line-height: 1.25;
+  }
+  @include breakpoint(xlarge) {
+    font-size: 2.25rem;
+  }
+}
+
+h3, .h3 {
+  font-family: $sans;
+  font-weight: 800;
+  line-height: 1.36;
+  letter-spacing: 0;
+  font-size: 1.25rem;
+  @include breakpoint(large) {
+    font-size: 1.5rem;
+    line-height: 1.25;
+  }
+  @include breakpoint(xlarge) {
+    font-size: 1.75rem;
+  }
+}
+
+h4, .h4 {
+  font-family: $sans;
+  font-weight: 800;
+  line-height: 1.111;
+  letter-spacing: 0.25px;
+  font-size: 1.125rem;
+  color: $text-light;
+  @include breakpoint(large) {
+    font-size: 1.125rem;
+    line-height: 1.222;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+p, .p {
+  font-weight: 400;
+  color: $text;
+  line-height: 1.25;
+  font-size: 1rem;
+  max-width: 32em;
+  @include breakpoint(large) {
+    line-height: 1.375;
+  }
+}
+
+sup {
+  font-size: 50%;
+  vertical-align: middle;
+}
+
+ul {
+  list-style: none;
+  li {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.title {
+  height: 100%;
+  width: 100%;
+  font-size: 3.5rem;
+  color: $text;
+  text-align: center;
+  // background-image: svg-uri($wave);
+  background-repeat: repeat-x;
+  background-size: 2rem;
+  background-position: 0 100%;
+  text-shadow: -1px -1px 0 v, 1px -1px 0 $black, -1px 1px 0 $black, 1px 1px 0 $black;
+  color: $text-light;
+  animation: move 3s linear infinite;
+  animation-play-state: paused;
+
+  @supports (-webkit-text-stroke: 2px $black) {
+    -webkit-text-stroke: 2px $black;
+    text-shadow: none;
+  }
+
+  &:hover {
+    animation-play-state: running;
+  }
+
+  @include breakpoint($large) {
+    font-size: 4rem;
+  }
+}
+
+.subtitle {
+  margin-top: -40px;
+}
