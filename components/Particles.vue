@@ -1,6 +1,5 @@
 
-<script setup lang="ts">
-  import type { Container } from 'tsparticles-engine';
+<script setup>
   const options = {
     particles: {
       number: {
@@ -58,20 +57,10 @@
       }
     }
   }
-
-  const onLoad = (container: Container) => { 
-      container.pause()  
-      setTimeout(() => container.play(), 2000)
-  }
 </script>
 <template>
   <NuxtParticles
       id="tsparticles"    
       :options="options"
-      @load="onLoad"
   />
 </template>
-
-<style lang="scss" scoped>
-
-</style>

@@ -1,0 +1,21 @@
+@use 'sass:math';
+@function svg-uri($svg) {
+  $encoded: '';
+  $slice: 2000;
+  $index: 0;
+  $loops: math.ceil(calc(str-length($svg) / $slice));
+  // $loops: ceil(str-length($svg) / $slice);
+
+  @for $i from 1 through $loops {
+      $chunk: str-slice($svg, $index, $index + $slice - 1);
+      $chunk: str-replace($chunk, '"', "'");
+      $chunk: str-replace($chunk, '<', '%3C');
+      $chunk: str-replace($chunk, '>', '%3E');
+      $chunk: str-replace($chunk, '&', '%26');
+      $chunk: str-replace($chunk, '#', '%23');
+      $encoded: #{$encoded}#{$chunk};
+      $index: $index + $slice;
+  }
+
+  @return url("data:image/svg+xml;charset=utf8,#{$encoded}");
+}

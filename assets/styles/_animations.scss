@@ -1,0 +1,19 @@
+@-webkit-keyframes wiggle {
+  from {
+      background-position: 2px 19px;
+    }
+    to {
+      background-position: 500px 19px;
+    }
+}
+  
+@keyframes wiggle {
+  from {
+    background-position-x: 2px; 
+    // background-position: 2px 19px;
+  }
+  to {
+    background-position-x: 500px;
+    // background-position: 500px 19px;
+  }
+}

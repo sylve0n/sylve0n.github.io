@@ -1,8 +1,14 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  app: {
+    head: {
+
+    }
+  },
   modules: [
-    'nuxt-particles'
+    'nuxt-particles',
+    '@nuxtjs/google-fonts'
   ],
   css: ['~/assets/styles/index.scss'],
   vite: {
@@ -13,5 +19,10 @@ export default defineNuxtConfig({
         }
       }
     }
-  }
+  },
+  googleFonts: {
+    families: {
+      'Righteous': [400]
+    }
+  },
 })
