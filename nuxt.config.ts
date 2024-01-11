@@ -8,7 +8,8 @@ export default defineNuxtConfig({
   },
   modules: [
     'nuxt-particles',
-    '@nuxtjs/google-fonts'
+    '@nuxtjs/google-fonts',
+    'nuxt-gtag'
   ],
   css: ['~/assets/styles/index.scss'],
   vite: {
@@ -25,4 +26,7 @@ export default defineNuxtConfig({
       'Righteous': [400]
     }
   },
+  gtag: {
+    id: 'G-W4N10GP6VK'
+  }
 })

@@ -3,8 +3,8 @@
   <h2>oislafj</h2>
   <div class="links">
     <NuxtLink class="icon-link" to="mailto:hnsartin@gmail.com"><img class="icon--medium" src="/images/email.svg"/>Email</NuxtLink>
-    <NuxtLink class="icon-link" to="google.com"><img class="icon--medium" src="/images/linkedin.svg"/>LinkedIn</NuxtLink>
-    <NuxtLink class="icon-link" to="google.com"><img class="icon--medium" src="/images/github.svg"/>GitHub</NuxtLink>
+    <NuxtLink class="icon-link" to="https://google.com"><img class="icon--medium" src="/images/linkedin.svg"/>LinkedIn</NuxtLink>
+    <NuxtLink class="icon-link" to="https://google.com"><img class="icon--medium" src="/images/github.svg"/>GitHub</NuxtLink>
   </div>
 </template>
 

@@ -16,8 +16,8 @@
     flex-shrink: 0;
     margin-top: 1rem;
   }
-  p{
-    width: 100%;
+  p {
     margin: 0 auto;
+    text-align: center;
   }
 </style>
