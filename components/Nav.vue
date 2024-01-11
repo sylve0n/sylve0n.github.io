@@ -44,7 +44,11 @@
           box-shadow: 0.3rem 0.2rem 0 0 $pink, 0.3rem 0.2rem 0 0.1rem $black;
         }
         .btn--active {
+          background:
+            radial-gradient(circle at 100% 50%, transparent 20%, $pink 21%, $pink 34%, transparent 35%, transparent),
+            radial-gradient(circle at 0% 50%, transparent 20%, $pink 21%, $pink 34%, transparent 35%, transparent) 0 -50px;
           background-color: $lpink;
+          background-size:75px 100px;
         }
       }
       &:nth-child(2n){
@@ -52,7 +56,11 @@
           box-shadow: 0.3rem 0.2rem 0 0 $yellow, 0.3rem 0.2rem 0 0.1rem $black;
         }
         .btn--active {
+          background:
+            radial-gradient(circle at 100% 50%, transparent 20%, $yellow 21%, $yellow 34%, transparent 35%, transparent),
+            radial-gradient(circle at 0% 50%, transparent 20%, $yellow 21%, $yellow 34%, transparent 35%, transparent) 0 -50px;
           background-color: $lyellow;
+          background-size:75px 100px;
         }
       }
       &:nth-child(3n) {
@@ -60,7 +68,11 @@
           box-shadow: 0.3rem 0.2rem 0 0 $turquoise, 0.3rem 0.2rem 0 0.1rem $black;
         }
         .btn--active {
+          background:
+            radial-gradient(circle at 100% 50%, transparent 20%, $turquoise 21%, $turquoise 34%, transparent 35%, transparent),
+            radial-gradient(circle at 0% 50%, transparent 20%, $turquoise 21%, $turquoise 34%, transparent 35%, transparent) 0 -50px;
           background-color: $lturquoise;
+          background-size:75px 100px;
         }
       }
     }
