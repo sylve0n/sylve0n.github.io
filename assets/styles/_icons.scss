@@ -1,0 +1,11 @@
+.icon--medium {
+  width: 3rem;
+}
+
+.icon-link {
+  &:hover {
+    text-decoration: underline;
+    transform: translate(0.3rem, 0.2rem);
+    transition: 0.25s transform;
+  }
+}
