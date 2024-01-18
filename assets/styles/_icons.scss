@@ -5,6 +5,9 @@
 .icon-link {
   &:hover {
     text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: $pink;
+    text-decoration-thickness: 1.5px;
     transform: translate(0.3rem, 0.2rem);
     transition: 0.25s transform;
   }

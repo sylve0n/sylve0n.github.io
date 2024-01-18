@@ -1,4 +1,3 @@
-
 <script setup>
   const options = {
     particles: {
@@ -31,7 +30,7 @@
         }
       },
       size: {
-        value: 50 ,
+        value: 60,
         random: true,
         anim: {
           enable: false
