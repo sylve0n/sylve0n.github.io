@@ -1,0 +1,9 @@
+@use 'utilities' as *;
+@use 'base';
+
+h1 {
+  color: $red;
+  @include breakpoint(medium) {
+    color: pink;
+  }
+}
