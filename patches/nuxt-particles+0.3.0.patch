@@ -1,0 +1,30 @@
+diff --git a/node_modules/nuxt-particles/dist/module.json b/node_modules/nuxt-particles/dist/module.json
+index aa3c722..dc45e0e 100644
+--- a/node_modules/nuxt-particles/dist/module.json
++++ b/node_modules/nuxt-particles/dist/module.json
+@@ -1,8 +1,5 @@
+ {
+   "name": "nuxt-particles",
+   "configKey": "particles",
+-  "compatibility": {
+-    "nuxt": "^3.7.0"
+-  },
+   "version": "0.3.0"
+ }
+\ No newline at end of file
+diff --git a/node_modules/nuxt-particles/dist/module.mjs b/node_modules/nuxt-particles/dist/module.mjs
+index 154607e..1c1a289 100644
+--- a/node_modules/nuxt-particles/dist/module.mjs
++++ b/node_modules/nuxt-particles/dist/module.mjs
+@@ -4,10 +4,7 @@ import defu from 'defu';
+ const module = defineNuxtModule({
+   meta: {
+     name: "nuxt-particles",
+-    configKey: "particles",
+-    compatibility: {
+-      nuxt: "^3.7.0"
+-    }
++    configKey: "particles"
+   },
+   // Default configuration options of the Nuxt module
+   defaults: {

@@ -1,0 +1,79 @@
+@use 'util' as *;
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  font-family: $sans;
+  font-size: 16px;
+}
+
+img, picture {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+#__nuxt {
+  height: 100%;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 1.25rem;
+  font-weight: 600;
+  background-color: #fff;
+  border: 2px solid $black;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  color: $black;
+  box-shadow: 0.3em 0.2em 0 0 $pink, 0.3em 0.2em 0 0.1em $black;
+  transition: 0.1s background-color, 0.1s transform;
+
+  @include breakpoint(large) {
+    font-size: 1.5rem;
+  }
+
+  &:hover {
+    transform: translate(0.3em, 0.2em);
+  }
+
+  &:nth-child(1) {
+    box-shadow: 0.3em 0.2em 0 0 $pink, 0.3em 0.2em 0 0.1em $black;
+    &:hover {
+      background-color: $pink;
+      box-shadow: 0.3em 0.2em 0 0 $turquoise, 0.3em 0.2em 0 0.1em $black;
+    }  
+  }
+
+  &:nth-child(2) {
+    box-shadow: 0.3em 0.2em 0 0 $yellow, 0.3em 0.2em 0 0.1em $black;
+    &:hover {
+      background-color: $yellow;
+      box-shadow: 0.3em 0.2em 0 0 $pink, 0.3em 0.2em 0 0.1em $black;
+    }
+  }
+
+  &:nth-child(3) {
+    box-shadow: 0.3em 0.2em 0 0 $turquoise, 0.3em 0.2em 0 0.1em $black;
+    &:hover {
+      background-color: $turquoise;
+      box-shadow: 0.3em 0.2em 0 0 $yellow, 0.3em 0.2em 0 0.1em $black;
+    } 
+  }
+}
