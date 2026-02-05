@@ -17,7 +17,7 @@
     <NuxtLink class="btn" to="/docs/hannah-stewart-resume.pdf" external target="_blank">View My Resume</NuxtLink>
     <button class="btn" @click="toggleCats">{{ catButtonText }}</button>
   </div>
-  <div v-if="cats" class="cats">
+  <div v-show="cats" class="cats">
     <NuxtParticles id="catParticles" url="/particles/cats.json"/>
     <h3>Their names are Loop and Pete</h3>
   </div>

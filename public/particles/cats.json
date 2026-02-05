@@ -1,22 +1,5 @@
 {
   "autoPlay": true,
-  "background": {
-    "image": "",
-    "position": "",
-    "repeat": "",
-    "size": "",
-    "opacity": 1
-  },
-  "backgroundMask": {
-    "composite": "destination-out",
-    "cover": {
-      "opacity": 1,
-      "color": {
-        "value": ""
-      }
-    },
-    "enable": false
-  },
   "clear": true,
   "defaultThemes": {},
   "delay": 0,
@@ -28,7 +11,7 @@
   "duration": 0,
   "fpsLimit": 120,
   "interactivity": {
-    "detectsOn": "window",
+    "detectsOn": "canvas",
     "events": {
       "onClick": {
         "enable": true,
@@ -83,13 +66,6 @@
           "mix": false,
           "selectors": []
         }
-      },
-      "connect": {
-        "distance": 80,
-        "links": {
-          "opacity": 0.5
-        },
-        "radius": 60
       },
       "grab": {
         "distance": 100,
@@ -183,38 +159,6 @@
       "overlap": {
         "enable": true,
         "retries": 0
-      }
-    },
-    "color": {
-      "value": "#ffffff",
-      "animation": {
-        "h": {
-          "count": 0,
-          "enable": false,
-          "speed": 1,
-          "decay": 0,
-          "delay": 0,
-          "sync": true,
-          "offset": 0
-        },
-        "s": {
-          "count": 0,
-          "enable": false,
-          "speed": 1,
-          "decay": 0,
-          "delay": 0,
-          "sync": true,
-          "offset": 0
-        },
-        "l": {
-          "count": 0,
-          "enable": false,
-          "speed": 1,
-          "decay": 0,
-          "delay": 0,
-          "sync": true,
-          "offset": 0
-        }
       }
     },
     "effect": {
@@ -312,20 +256,9 @@
       }
     },
     "reduceDuplicates": false,
-    "shadow": {
-      "blur": 0,
-      "color": {
-        "value": "#000"
-      },
-      "enable": false,
-      "offset": {
-        "x": 0,
-        "y": 0
-      }
-    },
     "shape": {
-      "close": true,
-      "fill": true,
+      "close": false,
+      "fill": false,
       "options": {
         "image": [
           {
@@ -509,7 +442,7 @@
   "smooth": false,
   "style": {},
   "themes": [],
-  "zLayers": 100,
+  "zLayers": 50,
   "key": "images",
   "name": "Images",
   "preload": [
