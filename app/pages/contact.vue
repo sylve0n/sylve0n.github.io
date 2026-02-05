@@ -14,7 +14,7 @@
      rel="noopener norefferer">
      <img src="/img/linkedin.svg" alt="LinkedIn"/>
     </NuxtLink>
-    <a class="social__link" href="javascript:void(0)" onclick="window.location.href = 'mailto:' + 'name' + '@' + 'domain.com'">
+    <a class="social__link" href="javascript:void(0)" onclick="window.location.href = 'mailto:' + 'contact' + '@' + 'hannahs.dev'">
       <img src="/img/email.svg" alt="Email"/>
     </a>
   </div>
