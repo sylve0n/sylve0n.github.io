@@ -1,4 +1,10 @@
 <script setup>
+  useHead({
+    title: 'About Me',
+    meta: [
+      {name: 'description', content: 'About me, Hannah Stewart'}
+    ]
+  });
   const cats = ref(false)
   const catButtonText = ref("Click here to see my cats")
   function toggleCats(){

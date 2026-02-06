@@ -2,6 +2,16 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
+  app: {
+    head: {
+      htmlAttrs: {
+        lang: 'en'
+      },
+      link: [
+        {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}
+      ]
+    }
+  },
   modules: ['@nuxt/scripts', '@nuxt/fonts','nuxt-particles'],
   css: ['~/assets/styles/styles.scss'],
   particles: {

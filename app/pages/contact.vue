@@ -1,3 +1,11 @@
+<script setup>
+  useHead({
+    title: 'Contact Me',
+    meta: [
+      {name: 'description', content: "Contact me via the World Wide Web"}
+    ]
+  });
+</script>
 <template>
   <h1 class="title">Contact Me</h1>
   <h2>I'm on the World Wide Web!</h2>
