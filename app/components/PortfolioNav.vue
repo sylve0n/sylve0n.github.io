@@ -13,7 +13,6 @@
 </template>
 <style lang="scss" scoped>
   .portfolio-nav {
-    flex-shrink: 0;
     border-bottom: 2px dotted $pink;
     padding-bottom: 10px;
     @include breakpoint(medium) {

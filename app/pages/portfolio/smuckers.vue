@@ -13,6 +13,9 @@
     justify-content: center;
     align-items: start;
     gap: 16px;
+    img {
+      min-width: 0;
+    }
     @include breakpoint(large) {
       flex-direction: row;
     }

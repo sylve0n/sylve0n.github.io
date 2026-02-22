@@ -12,7 +12,7 @@
   </div>
   <div class="portfolio">
     <PortfolioNav/>
-    <div>
+    <div class="portfolio-body">
       <NuxtPage/>
     </div>
   </div>
@@ -30,5 +30,10 @@
     @include breakpoint(medium) {
       flex-direction: row;
     }
+  }
+  .portfolio-body {
+    min-width: 0;
+    flex: 1 1 0;
+    // overflow: scroll;
   }
 </style>

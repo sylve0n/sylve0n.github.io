@@ -14,6 +14,9 @@
     align-items: start;
     gap: 12px;
     flex-direction: column;
+    img {
+      min-width: 0;
+    }
     @include breakpoint(large) {
       flex-direction: row;
     }
