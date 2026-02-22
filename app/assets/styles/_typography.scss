@@ -6,8 +6,8 @@ h1, h2, h3, h4, h5, h6, a {
 h1, .h1 {
   font-weight: 800;
   line-height: 1.25;
-  font-size: 4rem;
-  @include breakpoint(large) {
+  font-size: 3.25rem;
+  @include breakpoint(medium) {
     font-size: 5rem;
     line-height: 1.125;
   }
@@ -62,8 +62,10 @@ p, .p {
   color: $text;
   line-height: 1.25;
   font-size: 1rem;
+  margin-bottom: 10px;
   @include breakpoint(large) {
     line-height: 1.375;
+    font-size: 1.25rem;
   }
 }
 
@@ -72,9 +74,18 @@ sup {
   vertical-align: middle;
 }
 
+.link {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: $pink;
+  color: $dturquoise;
+  &:hover {
+    color: $pink;
+  }
+}
+
 .title {
   font-family: 'Chango','Franklin Gothic', sans-serif;
-  height: 100%;
   width: 100%;
   color: $text;
   text-align: center;
@@ -93,5 +104,27 @@ sup {
   }
   &:hover {
     animation-play-state: running;
+  }
+}
+
+.list {
+  list-style-type: square;
+  margin-left: 16px;
+  li {
+    &:nth-child(3n + 1) {
+      &::marker {
+        color: $pink;
+      }
+    }
+    &:nth-child(3n + 2) {
+      &::marker {
+        color: $yellow;
+      }
+    }
+    &:nth-child(3n + 3) {
+      &::marker {
+        color: $turquoise;
+      }
+    }
   }
 }

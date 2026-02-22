@@ -16,7 +16,7 @@
   
   .main__content {
     background-color: #fff;
-    margin: 0 1.75rem;
+    margin: 0 0.75rem;
     padding: 30px 0;
     min-height: 350px;
     display: flex;
@@ -25,8 +25,11 @@
     align-items: center;
     border-radius: 10px;
     border: 3px solid $black;
-    @include breakpoint($large) {
-      margin: 0 6.25rem;
+    @include breakpoint($xmedium){
+      margin: 0 3rem;
+    }
+    @include breakpoint(xlarge) {
+      margin: 0 6rem;
     }
   }
 </style>

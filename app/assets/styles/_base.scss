@@ -3,6 +3,7 @@
 body, html {
   width: 100%;
   height: 100%;
+  font-size: 16px;
 }
 body {
   padding: 0;
@@ -12,7 +13,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
   font-family: $sans;
-  font-size: 16px;
 }
 
 img, picture {
@@ -32,9 +32,15 @@ html {
   height: 100%;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+  }
+}
+
 .btn {
   display: inline-block;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 600;
   background-color: #fff;
   border: 2px solid $black;
@@ -43,17 +49,27 @@ html {
   text-align: center;
   color: $black;
   box-shadow: 0.3em 0.2em 0 0 $pink, 0.3em 0.2em 0 0.1em $black;
-  transition: 0.1s background-color, 0.1s transform;
+  transition: 0.1s background-color, 0.1s transform;  
+  text-underline-offset: 4px;
+  
+  .router-link-active {
+    text-decoration: underline;
+    // text-decoration-thickness: 3px;
+    text-decoration-style: wavy;
+    letter-spacing: 2.5px;
+    color: $pink;
+    text-shadow: -1px -1px 0 $black, 1px -1px 0 $black, -1px 1px 0 $black, 1px 1px 0 $black;
+  }
 
   @include breakpoint(large) {
-    font-size: 1.5rem;
+    // font-size: 1.5rem;
   }
 
   &:hover {
     transform: translate(0.3em, 0.2em);
   }
 
-  &:nth-child(1) {
+  &:nth-child(3n + 1) {
     box-shadow: 0.3em 0.2em 0 0 $pink, 0.3em 0.2em 0 0.1em $black;
     &:hover {
       background-color: $pink;
@@ -61,7 +77,7 @@ html {
     }  
   }
 
-  &:nth-child(2) {
+  &:nth-child(3n + 2) {
     box-shadow: 0.3em 0.2em 0 0 $yellow, 0.3em 0.2em 0 0.1em $black;
     &:hover {
       background-color: $yellow;
@@ -69,7 +85,7 @@ html {
     }
   }
 
-  &:nth-child(3) {
+  &:nth-child(3n + 3) {
     box-shadow: 0.3em 0.2em 0 0 $turquoise, 0.3em 0.2em 0 0.1em $black;
     &:hover {
       background-color: $turquoise;

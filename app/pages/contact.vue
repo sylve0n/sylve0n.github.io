@@ -29,7 +29,7 @@
   
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
   .socials {
     display: flex;
     justify-content: center;
