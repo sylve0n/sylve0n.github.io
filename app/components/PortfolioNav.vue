@@ -12,33 +12,33 @@
   </div>
 </template>
 <style lang="scss" scoped>
-  .portfolio-nav {
-    border-bottom: 2px dotted $pink;
-    padding-bottom: 10px;
-    @include breakpoint(medium) {
-      border-bottom: 0;
-      border-right: 2px dotted $pink;
-      padding-right: 10px;
-    }
-  }
-  .portfolio-nav__items {
-    display: flex;
-    justify-content: space-between;
-    li {
-      margin-top: 5px;
-      a {
-        color: rebeccapurple;
-        &.router-link-exact-active {
-          color: $pink;
-          text-decoration: underline;
-          text-decoration-style: wavy;
-        }
-      }
-    }
-    @include breakpoint(medium) {
-      flex-direction: column;
-      justify-content: start;
-      gap: 10px;
-    }
-  }
+  // .portfolio-nav {
+  //   border-bottom: 2px dotted $pink;
+  //   padding-bottom: 10px;
+  //   @include breakpoint(medium) {
+  //     border-bottom: 0;
+  //     border-right: 2px dotted $pink;
+  //     padding-right: 10px;
+  //   }
+  // }
+  // .portfolio-nav__items {
+  //   display: flex;
+  //   justify-content: space-between;
+  //   li {
+  //     margin-top: 5px;
+  //     a {
+  //       color: rebeccapurple;
+  //       &.router-link-exact-active {
+  //         color: $pink;
+  //         text-decoration: underline;
+  //         text-decoration-style: wavy;
+  //       }
+  //     }
+  //   }
+  //   @include breakpoint(medium) {
+  //     flex-direction: column;
+  //     justify-content: start;
+  //     gap: 10px;
+  //   }
+  // }
 </style>

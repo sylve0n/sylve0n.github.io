@@ -12,12 +12,8 @@ export default defineNuxtConfig({
       ]
     }
   },
-  modules: ['@nuxt/scripts', '@nuxt/fonts','nuxt-particles'],
+  modules: ['@nuxt/scripts', '@nuxt/fonts'],
   css: ['~/assets/styles/styles.scss'],
-  particles: {
-    mode: 'full', // 'full' | 'slim' | 'basic' | 'custom'
-    lazy: true
-  },
   vite: {
     css: {
       preprocessorOptions: {

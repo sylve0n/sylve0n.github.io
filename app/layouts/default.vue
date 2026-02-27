@@ -1,35 +1,36 @@
 <template>
-  <NuxtParticles id="tsparticles" url="/particles/default.json"/>
   <div class="main">
-    <Header />
+    <Header/>
     <div class="main__content">
-      <slot />
+      <Sidebar/>
+      <div class="resizable-area">
+        <ResizableBlock>
+          <slot/>
+        </ResizableBlock>
+      </div>
     </div>
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
   .main {
-    position: relative;
-    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-color: $grey;
+    padding: 3px;
+    border-top: 3px solid #fff;
+    border-right: 3px solid #000;
+    border-bottom: 3px solid #000;
+    border-left: 3px solid #fff;
   }
-  
   .main__content {
-    background-color: #fff;
-    margin: 0 0.75rem;
-    padding: 30px 0;
-    min-height: 350px;
+    background-color: $dgrey;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    border: 3px solid $black;
-    @include breakpoint($xmedium){
-      margin: 0 3rem;
-    }
-    @include breakpoint(xlarge) {
-      margin: 0 6rem;
-    }
+    justify-content: flex-start;
+    align-items: start;
+    height: 100%;
+  }
+  .resizable-area {
+    padding: 6px;
   }
 </style>

@@ -1,130 +1,130 @@
-@use 'util' as *;
-h1, h2, h3, h4, h5, h6, a {
-  color: $text;
-}
+// @use 'util' as *;
+// h1, h2, h3, h4, h5, h6, a {
+//   color: $text;
+// }
 
-h1, .h1 {
-  font-weight: 800;
-  line-height: 1.25;
-  font-size: 3.25rem;
-  @include breakpoint(medium) {
-    font-size: 5rem;
-    line-height: 1.125;
-  }
-  @include breakpoint(xlarge) {
-    font-size: 6rem;
-    line-height: 1.05;
-  }
-}
+// h1, .h1 {
+//   font-weight: 800;
+//   line-height: 1.25;
+//   font-size: 3.25rem;
+//   @include breakpoint(medium) {
+//     font-size: 5rem;
+//     line-height: 1.125;
+//   }
+//   @include breakpoint(xlarge) {
+//     font-size: 6rem;
+//     line-height: 1.05;
+//   }
+// }
 
-h2, .h2 {
-  font-weight: 800;
-  line-height: 1.153;
-  font-size: 1.625rem;
-  @include breakpoint(large) {
-    font-size: 2rem;
-    line-height: 1.25;
-  }
-  @include breakpoint(xlarge) {
-    font-size: 2.75rem;
-  }
-}
+// h2, .h2 {
+//   font-weight: 800;
+//   line-height: 1.153;
+//   font-size: 1.625rem;
+//   @include breakpoint(large) {
+//     font-size: 2rem;
+//     line-height: 1.25;
+//   }
+//   @include breakpoint(xlarge) {
+//     font-size: 2.75rem;
+//   }
+// }
 
-h3, .h3 {
-  font-weight: 800;
-  line-height: 1.36;
-  font-size: 1.375rem;
-  @include breakpoint(large) {
-    font-size: 1.5rem;
-    line-height: 1.25;
-  }
-  @include breakpoint(xlarge) {
-    font-size: 1.75rem;
-  }
-}
+// h3, .h3 {
+//   font-weight: 800;
+//   line-height: 1.36;
+//   font-size: 1.375rem;
+//   @include breakpoint(large) {
+//     font-size: 1.5rem;
+//     line-height: 1.25;
+//   }
+//   @include breakpoint(xlarge) {
+//     font-size: 1.75rem;
+//   }
+// }
 
-h4, .h4 {
-  font-weight: 800;
-  line-height: 1.111;
-  font-size: 0.875rem;
-  color: $text;
-  @include breakpoint(large) {
-    line-height: 1.222;
-  }
-}
+// h4, .h4 {
+//   font-weight: 800;
+//   line-height: 1.111;
+//   font-size: 0.875rem;
+//   color: $text;
+//   @include breakpoint(large) {
+//     line-height: 1.222;
+//   }
+// }
 
-a {
-  text-decoration: none;
-}
+// a {
+//   text-decoration: none;
+// }
 
-p, .p {
-  font-weight: 400;
-  color: $text;
-  line-height: 1.25;
-  font-size: 1rem;
-  margin-bottom: 10px;
-  @include breakpoint(large) {
-    line-height: 1.375;
-    font-size: 1.25rem;
-  }
-}
+// p, .p {
+//   font-weight: 400;
+//   color: $text;
+//   line-height: 1.25;
+//   font-size: 1rem;
+//   margin-bottom: 10px;
+//   @include breakpoint(large) {
+//     line-height: 1.375;
+//     font-size: 1.25rem;
+//   }
+// }
 
-sup {
-  font-size: 50%;
-  vertical-align: middle;
-}
+// sup {
+//   font-size: 50%;
+//   vertical-align: middle;
+// }
 
-.link {
-  text-decoration: underline;
-  text-decoration-style: wavy;
-  text-decoration-color: $pink;
-  color: $dturquoise;
-  &:hover {
-    color: $pink;
-  }
-}
+// .link {
+//   text-decoration: underline;
+//   text-decoration-style: wavy;
+//   text-decoration-color: $pink;
+//   color: $dturquoise;
+//   &:hover {
+//     color: $pink;
+//   }
+// }
 
-.title {
-  font-family: 'Chango','Franklin Gothic', sans-serif;
-  width: 100%;
-  color: $text;
-  text-align: center;
-  background-image: svg-uri($wave);
-  background-repeat: repeat-x;
-  background-size: 2.5em;
-  text-shadow: -1px -1px 0 $black, 1px -1px 0 $black, -1px 1px 0 $black, 1px 1px 0 $black;
-  color: $text-light;
-  animation: move 3s linear infinite;
-  animation-play-state: paused;
-  margin-bottom: 20px;
+// .title {
+//   font-family: 'Chango','Franklin Gothic', sans-serif;
+//   width: 100%;
+//   color: $text;
+//   text-align: center;
+//   background-image: svg-uri($wave);
+//   background-repeat: repeat-x;
+//   background-size: 2.5em;
+//   text-shadow: -1px -1px 0 $black, 1px -1px 0 $black, -1px 1px 0 $black, 1px 1px 0 $black;
+//   color: $text-light;
+//   animation: move 3s linear infinite;
+//   animation-play-state: paused;
+//   margin-bottom: 20px;
 
-  @supports (-webkit-text-stroke: 2px $black) {
-    -webkit-text-stroke: 2px $black;
-    text-shadow: none;
-  }
-  &:hover {
-    animation-play-state: running;
-  }
-}
+//   @supports (-webkit-text-stroke: 2px $black) {
+//     -webkit-text-stroke: 2px $black;
+//     text-shadow: none;
+//   }
+//   &:hover {
+//     animation-play-state: running;
+//   }
+// }
 
-.list {
-  list-style-type: square;
-  margin-left: 16px;
-  li {
-    &:nth-child(3n + 1) {
-      &::marker {
-        color: $pink;
-      }
-    }
-    &:nth-child(3n + 2) {
-      &::marker {
-        color: $yellow;
-      }
-    }
-    &:nth-child(3n + 3) {
-      &::marker {
-        color: $turquoise;
-      }
-    }
-  }
-}
+// .list {
+//   list-style-type: square;
+//   margin-left: 16px;
+//   li {
+//     &:nth-child(3n + 1) {
+//       &::marker {
+//         color: $pink;
+//       }
+//     }
+//     &:nth-child(3n + 2) {
+//       &::marker {
+//         color: $yellow;
+//       }
+//     }
+//     &:nth-child(3n + 3) {
+//       &::marker {
+//         color: $turquoise;
+//       }
+//     }
+//   }
+// }

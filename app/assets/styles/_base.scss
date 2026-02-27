@@ -12,7 +12,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
-  font-family: $sans;
+  font-family: 'Tahoma';
+  // font-family: $sans;
 }
 
 img, picture {
@@ -38,58 +39,58 @@ html {
   }
 }
 
-.btn {
-  display: inline-block;
-  font-size: 1.5rem;
-  font-weight: 600;
-  background-color: #fff;
-  border: 2px solid $black;
-  border-radius: 5px;
-  padding: 10px;
-  text-align: center;
-  color: $black;
-  box-shadow: 0.3em 0.2em 0 0 $pink, 0.3em 0.2em 0 0.1em $black;
-  transition: 0.1s background-color, 0.1s transform;  
-  text-underline-offset: 4px;
+// .btn {
+//   display: inline-block;
+//   font-size: 1.5rem;
+//   font-weight: 600;
+//   background-color: #fff;
+//   border: 2px solid $black;
+//   border-radius: 5px;
+//   padding: 10px;
+//   text-align: center;
+//   color: $black;
+//   box-shadow: 0.3em 0.2em 0 0 $pink, 0.3em 0.2em 0 0.1em $black;
+//   transition: 0.1s background-color, 0.1s transform;  
+//   text-underline-offset: 4px;
   
-  .router-link-active {
-    text-decoration: underline;
-    // text-decoration-thickness: 3px;
-    text-decoration-style: wavy;
-    letter-spacing: 2.5px;
-    color: $pink;
-    text-shadow: -1px -1px 0 $black, 1px -1px 0 $black, -1px 1px 0 $black, 1px 1px 0 $black;
-  }
+//   .router-link-active {
+//     text-decoration: underline;
+//     // text-decoration-thickness: 3px;
+//     text-decoration-style: wavy;
+//     letter-spacing: 2.5px;
+//     color: $pink;
+//     text-shadow: -1px -1px 0 $black, 1px -1px 0 $black, -1px 1px 0 $black, 1px 1px 0 $black;
+//   }
 
-  @include breakpoint(large) {
-    // font-size: 1.5rem;
-  }
+//   @include breakpoint(large) {
+//     // font-size: 1.5rem;
+//   }
 
-  &:hover {
-    transform: translate(0.3em, 0.2em);
-  }
+//   &:hover {
+//     transform: translate(0.3em, 0.2em);
+//   }
 
-  &:nth-child(3n + 1) {
-    box-shadow: 0.3em 0.2em 0 0 $pink, 0.3em 0.2em 0 0.1em $black;
-    &:hover {
-      background-color: $pink;
-      box-shadow: 0.3em 0.2em 0 0 $turquoise, 0.3em 0.2em 0 0.1em $black;
-    }  
-  }
+//   &:nth-child(3n + 1) {
+//     box-shadow: 0.3em 0.2em 0 0 $pink, 0.3em 0.2em 0 0.1em $black;
+//     &:hover {
+//       background-color: $pink;
+//       box-shadow: 0.3em 0.2em 0 0 $turquoise, 0.3em 0.2em 0 0.1em $black;
+//     }  
+//   }
 
-  &:nth-child(3n + 2) {
-    box-shadow: 0.3em 0.2em 0 0 $yellow, 0.3em 0.2em 0 0.1em $black;
-    &:hover {
-      background-color: $yellow;
-      box-shadow: 0.3em 0.2em 0 0 $pink, 0.3em 0.2em 0 0.1em $black;
-    }
-  }
+//   &:nth-child(3n + 2) {
+//     box-shadow: 0.3em 0.2em 0 0 $yellow, 0.3em 0.2em 0 0.1em $black;
+//     &:hover {
+//       background-color: $yellow;
+//       box-shadow: 0.3em 0.2em 0 0 $pink, 0.3em 0.2em 0 0.1em $black;
+//     }
+//   }
 
-  &:nth-child(3n + 3) {
-    box-shadow: 0.3em 0.2em 0 0 $turquoise, 0.3em 0.2em 0 0.1em $black;
-    &:hover {
-      background-color: $turquoise;
-      box-shadow: 0.3em 0.2em 0 0 $yellow, 0.3em 0.2em 0 0.1em $black;
-    } 
-  }
-}
+//   &:nth-child(3n + 3) {
+//     box-shadow: 0.3em 0.2em 0 0 $turquoise, 0.3em 0.2em 0 0.1em $black;
+//     &:hover {
+//       background-color: $turquoise;
+//       box-shadow: 0.3em 0.2em 0 0 $yellow, 0.3em 0.2em 0 0.1em $black;
+//     } 
+//   }
+// }
