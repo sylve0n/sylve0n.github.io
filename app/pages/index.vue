@@ -7,8 +7,18 @@
   });
 </script>
 <template>
-  <h1 class="title">Hi I'm Hannah!</h1>
-  <h2>I do web stuff!</h2>
+  <div>
+    homepage
+  </div>
+  <!-- <Header/>
+  <div class="main__content">
+    <Sidebar/>
+    <div class="resizable-area">
+      <ResizableBlock>
+        <div>I do web stuff</div>
+      </ResizableBlock>
+    </div>
+  </div> -->
 </template>
 
 <style lang="scss">
